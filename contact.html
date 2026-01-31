@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>KIA - The Best Program to Enroll for Exchange</title>
+  <meta name="title" content="KIA - The Best Program to Enroll for Exchange">
+  <meta name="description" content="This is an education html template made by zwakele mpinda">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="hero-bg.svg">
+  <link rel="preload" as="image" href="hero-banner-1.jpg">
+  <link rel="preload" as="image" href="hero-banner-2.jpg">
+  <link rel="preload" as="image" href="hero-shape-1.svg">
+  <link rel="preload" as="image" href="hero-shape-2.png">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+       <a href="index.html" class="logo">
+        <img src="logo.png" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="index.html" class="logo">
+        <img src="logo.png" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="rewrite-programme.html" class="navbar-link" data-nav-link>Programmes</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <a href="contact.html" class="btn has-before">
+          <span class="span">Register Now</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('hero-bg.svg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              Sawubona. Goeie môre.<span class="span">Molo. Howzit.</span>
+            </h1>
+
+            <p class="hero-text">
+              Get in touch below.
+            </p>
+
+            <a href="rewrite-programme.html" class="btn has-before">
+              <span class="span">Find courses</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="teacher1.jpg" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="student4.jpg" width="240" height="370" alt="hero banner" class="img-cover">
+            </div>
+
+            <img src="hero-shape-1.png" width="230" height="250" alt="" class="shape hero-shape-1">
+
+            <img src="hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT FORM
+      -->
+
+      <section id="uct-form-container">
+  <style>
+    #uct-form-container {
+      font-family: 'Arial', sans-serif;
+      max-width: 650px;
+      margin: 20px auto;
+      padding: 30px;
+      background-color: #f9fbff;
+      color: #333;
+      border-radius: 4px;
+    }
+
+    /* Form Step Visibility */
+    #uct-form-container .form-step { display: none; }
+    #uct-form-container .form-step.active { display: block; }
+
+    /* Text Inputs and Labels */
+    #uct-form-container label.field-label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 15px;
+      color: #2c3e50;
+    }
+
+    #uct-form-container .required-star {
+      color: #d9534f;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    #uct-form-container input[type="text"],
+    #uct-form-container input[type="email"],
+    #uct-form-container select,
+    #uct-form-container textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d9534f; /* Matches your error state in image */
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    #uct-form-container .error-msg {
+      color: #d9534f;
+      font-size: 13px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    /* FIXED RADIO ALIGNMENT */
+    #uct-form-container .radio-group {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Aligns group to the left */
+    }
+
+    #uct-form-container .radio-option {
+      display: flex;
+      align-items: center; /* Vertical center button with text */
+      justify-content: flex-start; /* Horizontal start */
+      margin-bottom: 15px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    #uct-form-container .radio-option input[type="radio"] {
+      margin: 0 12px 0 0; /* Space only on the right of the button */
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      flex-shrink: 0; /* Prevents button from squishing */
+    }
+
+    #uct-form-container .radio-text {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+      line-height: 1.4;
+    }
+
+    /* Buttons */
+    #uct-form-container .btn-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    #uct-form-container .btn {
+      padding: 12px 50px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      background-color: #009cd7;
+      color: white;
+    }
+
+    #uct-form-container .btn-row {
+  display: flex;
+  justify-content: space-between; /* Buttons move to opposite ends */
+  margin-top: 30px;
+}
+
+    #uct-form-container .footer-note {
+      font-size: 12px;
+      color: #777;
+      margin: 20px 0;
+    }
+  </style>
+
+  
+   <form id="multiStepForm">
+    <div class="form-step active" data-step="1">
+      <label>First Name<span class="required-star">*</span></label>
+      <input type="text" placeholder="Eg. Joseph Smith" required>
+      <span class="error-msg">Please complete this required field.</span>
+
+      <label>Email<span class="required-star">*</span></label>
+      <input type="email" placeholder="Eg. joseph.smith@gmail.com" required>
+      <span class="error-msg">Please complete this required field.</span>
+
+      <label>Which option applies to you?<span class="required-star">*</span></label>
+      <div class="radio-group">
+        <label class="radio-option"><input type="radio" name="path" required> I want to apply for my child to go to high school.</label>
+        <label class="radio-option"><input type="radio" name="path"> I want to complete my matric.</label>
+      </div>
+      
+      <p class="footer-note">
+        By entering your details, you are consenting to receive further communication about KIA...
+      </p>
+
+      <div class="btn-row">
+        <button type="button" class="btn btn-next" onclick="changeStep(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="form-step" data-step="2">
+      <label>Age of the learner<span class="required-star">*</span></label>
+      <select required>
+        <option value="">Select age...</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+      </select>
+      <span class="error-msg">Please complete this required field.</span>
+
+      <label>What is the last grade the learner completed?<span class="required-star">*</span></label>
+      <select required>
+        <option value="">Select grade...</option>
+        <option value="7">Grade 7</option>
+        <option value="8">Grade 8</option>
+      </select>
+      <span class="error-msg">Please complete this required field.</span>
+
+      <label>When do you want to start?<span class="required-star">*</span></label>
+      <div class="radio-group">
+        <label class="radio-option"><input type="radio" name="start" required> Immediately</label>
+        <label class="radio-option"><input type="radio" name="start"> Next Term</label>
+        <label class="radio-option"><input type="radio" name="start"> Next Year</label>
+        <label class="radio-option"><input type="radio" name="start"> I'm just exploring for now</label>
+      </div>
+
+      <div class="btn-row">
+        <button type="button" class="btn btn-back" onclick="changeStep(-1)">Previous</button>
+        <button type="button" class="btn btn-next" onclick="changeStep(1)">Next</button>
+      </div>
+    </div>
+
+    <div class="form-step" data-step="3">
+      <h3 style="text-align:center; color:#34495e;">Enquiry</h3>
+      <label>Contact us enquiry</label>
+      <textarea rows="4"></textarea>
+
+      <div class="captcha-box">
+        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width="30" alt="captcha" style="vertical-align: middle;">
+        <span style="font-size:10px; color:#555; margin-left:10px;">protected by reCAPTCHA<br>Privacy - Terms</span>
+      </div>
+
+      <div class="btn-row">
+        <button type="button" class="btn btn-back" onclick="changeStep(-1)">Back</button>
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </div>
+    </div>
+  </form>
+
+  <script>
+    function changeStep(n) {
+      const steps = document.querySelectorAll('.form-step');
+      let current = 0;
+      steps.forEach((s, i) => { if(s.classList.contains('active')) current = i; });
+      
+      steps[current].classList.remove('active');
+      steps[current + n].classList.add('active');
+    }
+  </script>
+</section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+ <footer class="footer" style="background-image: url('footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+          <p class="footer-brand-text">
+            Registered with Department of Education KZN <br>
+            CENTRE NO. 5411255 
+          </p>
+
+          <div class="wrapper">
+            <span class="span">Address:</span>
+            <br>
+            <address class="address">333 Anton Lembede Street <br>
+              12th Floor Durban Bay House 
+            </address>
+          </div>
+          <br>
+          <div class="wrapper">
+            <span class="span">Cell:</span>
+
+            <a href="tel:0813273457" class="footer-link">+27 81 327 3457</a>
+          </div>
+          <div class="wrapper">
+            <span class="span">Whatsapp:</span>
+            <a href="tel:0833717420" class="footer-link">+27 83 371 7420</a>
+          </div>
+          <br>
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@eduweb.com" class="footer-link">info@KIA.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="about.html" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="rewrite-programme.html" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Events</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor Profile</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Purchase Guide</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="faq.html" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="comingsoon.html" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2026 All Rights Reserved by <a href="/index.html" class="copyright-link">Kzn International Academy</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon | eLearning App</title>
+
+  <style>
+    :root {
+      --primary-red: #b11226;
+      --dark-text: #1f1f1f;
+      --light-text: #555;
+      --bg-light: #f9f9f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(
+        135deg,
+        rgba(177, 18, 38, 0.95),
+        rgba(120, 10, 25, 0.95)
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .coming-soon-container {
+      background-color: #fff;
+      max-width: 900px;
+      width: 100%;
+      border-radius: 14px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--primary-red);
+      color: #fff;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: var(--dark-text);
+      margin-bottom: 1rem;
+    }
+
+    h1 span {
+      color: var(--primary-red);
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--light-text);
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.6;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .feature {
+      background-color: var(--bg-light);
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .feature h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark-text);
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: var(--light-text);
+      line-height: 1.5;
+    }
+
+    .notify {
+      margin-top: 1.5rem;
+    }
+
+    .notify p {
+      margin-bottom: 0.75rem;
+      color: var(--light-text);
+      font-size: 0.95rem;
+    }
+
+    .notify-form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .notify-form input {
+      padding: 0.75rem 1rem;
+      width: 260px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+    }
+
+    .notify-form button {
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      border: none;
+      background-color: var(--primary-red);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .notify-form button:hover {
+      background-color: #8f0f1f;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .coming-soon-container {
+        padding: 2rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="coming-soon-container">
+    <span class="badge">Launching Soon</span>
+
+    <h1>
+      A Smarter Way to <span>Learn & Rewrite</span>
+    </h1>
+
+    <p class="subtitle">
+      We’re building a powerful eLearning app designed to help students prepare
+      smarter, revise effectively, and succeed in their Matric rewrite exams —
+      anytime, anywhere.
+    </p>
+
+    <section class="features">
+      <div class="feature">
+        <h3>📚 Structured Lessons</h3>
+        <p>
+          Curriculum-aligned content for Matric rewrite subjects with clear,
+          guided explanations.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>📝 Exam Practice</h3>
+        <p>
+          Past exam questions, tests, and revision tools to build confidence
+          before exams.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>📊 Progress Tracking</h3>
+        <p>
+          Monitor performance, identify weak areas, and track improvement over
+          time.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>📱 Learn Anywhere</h3>
+        <p>
+          Mobile-first design so students can study anytime on their phone or
+          tablet.
+        </p>
+      </div>
+    </section>
+
+    <div class="notify">
+      <p>Want to be notified when the app launches?</p>
+      <form class="notify-form">
+        <input type="email" placeholder="Enter your email address" required />
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+
+    <footer>
+      © 2026 • Empowering students through smarter learning
+    </footer>
+  </main>
+</body>
+</html>
